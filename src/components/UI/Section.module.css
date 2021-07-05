@@ -1,0 +1,19 @@
+.section {
+    width: 66vw;
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    height: auto;
+  
+  }
+
+  @media (max-width: 659px) {
+    .section {
+      width: 100vw;
+    }
+    
+  }
+  

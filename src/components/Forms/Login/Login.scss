@@ -1,0 +1,180 @@
+
+@import 'var';
+@import 'mixin'; /* partials - creating separate files for scss variables and mixin*/
+
+.formLogin{
+    @include heightwidth(auto);
+    display:$display-block;
+    position: $position-relative;
+    min-height: 400px + 400px; /* 1. Operators */
+    margin-top: $zero;
+
+    .formLogin input,button{
+      appearance: $none;
+      background:$none;
+      border:$none;
+      outline:$none;
+    }
+
+    .formLogin button {
+      cursor: pointer;
+      font: inherit;
+      background-color: #7a0144;
+      border: 1px solid #7a0144;
+      border-radius: 20px;
+      padding: 0.5rem 2rem;
+      color: $bg-color-white;
+    }
+
+    &::after{ /*Nesting using &  */
+      @include heightwidth(800);
+      content:'';
+      display:$display-block;
+      position:absolute;
+      top:$zero;
+      left:-10px;
+      right:-5px;
+      bottom:-5px;
+      z-index: 1;
+       /* background-image: url("./images/bankbgimage3.jpg"); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+       
+  
+  .formLogin html {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  .formLogin body {
+    margin: $zero;
+    background-color: #3f3f3f;
+  }
+  
+ 
+  
+  .formLogin button:hover,
+  button:active {
+    background-color: $color-light-red;
+    border-color:$color-light-red;
+  }
+  }
+  
+  .formLogin .form-inner{
+    position:$position-relative;
+    display:$display-block;
+    background-color: $bg-color-white;
+    opacity: 0.93;
+    padding : 60px;
+    z-index: 2;
+    width:40%;
+    margin-top: 13%;
+    margin-left: 30%;
+    margin-right: 25%;
+  }
+  
+  .formLogin .form-inner h2{
+   color : $color-font-red;
+   font-size:28px;
+   font-weight: $value-500;
+   margin-bottom: 30px;
+   margin-left: $margin-left-20;
+   margin-top: $margin-15px;
+  }
+  
+  .formLogin .form-inner .form-group{
+    display:$display-block;
+    /*width:$width-100vw;*/
+    margin-bottom:$margin-15px;
+  }
+  
+  .formLogin .form-inner .form-group input{
+    display:$display-block;
+    width : $auto;
+    min-width: 25%;
+    padding:10px $margin-15px;
+    background-color: #e2e0e0;
+    opacity: 0.93;
+    border-radius:8px;
+    transition: $transition;
+    margin-left: $margin-left-20;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    width: 82%;
+  }
+  .form-inner .form-group label {
+    display:$display-block;
+    margin-left: $margin-left-20;
+    transition: $transition;
+  }
+  
+  .form-inner .form-group:focus-within label{
+    color:#FE4880;
+    @include labelprop;
+  }
+  
+ 
+  
+  .formLogin .form-inner .form-group input:focus{
+  box-shadow:0px 0px 3px rgba(0,0,0,0.2)
+  }
+  
+  
+  
+  .welcome{
+  width:100%;
+  max-width: 480px;
+  background-color: $bg-color-white; /*Scss variables */
+  opacity: 0.93;
+  padding:$margin-15px 30px;
+
+  .welcome h2{ /*Nesting */
+    color:#888;
+    font-size:28px;
+    font-weight: $value-500;
+    margin-bottom:30px;  
+  }
+  }
+  
+  
+.login-border{
+    border-radius: $value-2px;
+    border-color: black;
+    border-width: $value-2px;
+    border-style: solid;
+}
+
+.formLogin .form-inner input[type="submit"]{
+  display: inline-block;
+  width: 25vw;
+  padding:10px $margin-15px;
+  margin-left: $margin-left-20;
+  background-color: rgb(2, 2, 110);
+  border-radius: 5px;
+  border: none;
+  color: $bg-color-white;
+  font-size: 18px;
+  font-weight: $value-500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover{
+    background-color: $color-light-red;
+  }
+
+  &:focus{
+    background-color: $color-light-grey;
+    }
+}
+
+@media(max-width: 459px){
+  .formLogin .form-inner {
+    width: 100%;
+    margin-left:0%;
+    margin-top: 35%;
+  }
+}

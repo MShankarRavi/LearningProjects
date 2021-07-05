@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  min-height: 75px;
+  display: block;
+}
+
+header {
+  background: #141025d8 0%;
+ /*  background-color: rgb(194, 181, 181) ; */
+  
+  top:0px;
+  width : 100%;
+  position:fixed;
+ /* width: 100vw; 
+ 
+ */
+  z-index: 3;
+  height: 75px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width:10%;
+  height:10%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 23px;
+  position: relative;
+}
+
+.buttonlogout{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+  background-color: black;
+  color:#fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:active {
+  color: red;
+}
+
+nav a::selection{
+  color:aqua;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logout{
+    color:#fff;
+    background-color:#000;
+
+}
+
+.logo {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding:0;
+  /* width: 20px; */
+  display: inline-block;
+}
+
+.logo img {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.buttonLogout{
+  height: 35px;
+  width: auto;
+  background-color: #000;
+  color:#fff;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 30px;
+
+}
+
+.buttonLogout:hover{
+  background-color: rgb(133, 14, 14);
+}
+
+@media (max-width: 459px){
+  nav{
+    float: none;
+  }
+
+  nav li {
+    margin-left: 30px;
+    padding-top: 5px;
+  }
+
+  .Header_container__1Gc-W {
+    width: 95%;
+  }
+
+  .Header_logo__2EIZR {
+    display: none;
+}
+
+}

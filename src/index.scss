@@ -1,0 +1,30 @@
+// SCSS
+/*variables */
+
+$bg-color-white : #fff;
+$color-font-red : red;
+$margin-left-20 :20px;
+$transition : 0.4s;
+
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App{
+
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color: $bg-color-white;
+  opacity: 0.93;
+  background-image: url('./images/bankbgimage3.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+

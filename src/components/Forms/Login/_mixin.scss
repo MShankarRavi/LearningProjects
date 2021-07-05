@@ -1,0 +1,13 @@
+
+@mixin labelprop { /* 4 . common property setting using mixin */
+    color:#666;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  @mixin heightwidth($hval) { //5 .  passing parameters via mixin
+  
+    height: hval;
+    width: 100%;
+    
+  }

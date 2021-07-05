@@ -1,0 +1,92 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form input {
+    font:inherit;
+    padding: 0.25rem;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .form input:focus {
+    outline: none;
+    border-color: #7a0144;
+  }
+
+  .loan-group {
+    display: inline-block;
+    width : 50%
+  }
+
+  .loan-group__container{
+    display: inline-block;
+    position:fixed;
+
+  }
+  .form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+    align-items: center;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 20px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-inline button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+  }
+
+  .form-inline h1 {
+    margin-top: 20px;
+    display: block;
+    width: 100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-inline p {
+    margin-top: 20px;
+    display: block;
+    width: 100vw;
+  }
+
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+  .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  
+ 

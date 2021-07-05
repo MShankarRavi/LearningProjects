@@ -1,0 +1,170 @@
+.bodyAccount{
+  height: auto;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /*background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 75px;
+}
+  .containerAccount{
+   
+    max-width: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.93;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(230, 15, 15, 0.15);
+  }
+  .containerAccount .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color:red;
+    margin-bottom: 10px;
+  }
+  .containerAccount .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); 
+  }
+  .contentAccount .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .formAccount .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  .formAccount .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+   .formAccount .account-details .account-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+   .formAccount .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   .formAccount .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   .formAccount .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #9b59b6;
+     border-color: #d9d9d9;
+   }
+   .formAccount input[type="radio"]{
+     display: none;
+   }
+   .formAccount .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   .formAccount .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   }
+   .formAccount .button input:hover{
+    /* trans.formAccount: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+   @media(max-width: 584px){
+   .containerAccount{
+    max-width: 100%;
+  }
+  .formAccount .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    .formAccount .category{
+      width: 100%;
+    }
+    .contentAccount .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .containerAccount .contentAccount.category{
+      flex-direction: column;
+    }
+  }
+  .formAccountUpdate{
+  
+      top: 80px;
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter:blur(0.5px)
+  
+    
+  }
+
+  .back-login{
+    margin-right: 1%;
+   justify-content: right;
+  }
+  
+  .back-login p {
+    margin-left: 0px;
+  }
